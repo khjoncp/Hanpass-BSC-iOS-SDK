@@ -206,7 +206,7 @@ public class BnbWalletManager {
             
             var data: [String: Any] = [:]
             data = ["network": isMainNet() ? "MAINNET" : "TESTNET",
-                    "action_type": "SEND_ETHER",
+                    "action_type": "SEND_BNB",
                     "from_wallet_address": senderAddress,
                     "to_wallet_address": receiverAddress,
                     "amount": value,
@@ -225,7 +225,7 @@ public class BnbWalletManager {
         } catch(let err) {
             var data: [String: Any] = [:]
             data = ["network": isMainNet() ? "MAINNET" : "TESTNET",
-                    "action_type": "SEND_ETHER",
+                    "action_type": "SEND_BNB",
                     "from_wallet_address": senderAddress,
                     "to_wallet_address": receiverAddress,
                     "amount": value,
@@ -349,7 +349,7 @@ public class BnbWalletManager {
         }
     }
     
-    /* Check Ether Balance */
+    /* Check BNB Balance */
     public func checkBalance(walletAddress: String) throws -> String? {
         do{
             let infura = web3(provider: Web3HttpProvider(URL(string: infuraWeb3)!)!)
@@ -416,7 +416,7 @@ public class BnbWalletManager {
         }
     }
     
-    /* Check ERC20 Token Balance */
+    /* Check BEP20 Token Balance */
     public func checkBEP20Balance(walletAddress: String, contractAddress: String) throws -> String? {
         
         do{
@@ -499,7 +499,7 @@ public class BnbWalletManager {
                     data = ["action_type": "WALLET_CREATE",
                             "wallet_address": walletAddress,
                             "function_name": "WALLET_CREATE",
-                            "network": "ETHEREUM",
+                            "network": "BINANCE",
                             "token_name": "HANPASS",
                             "token_symbol": "HPS",
                             "token_id": gitData.data.token_id,
