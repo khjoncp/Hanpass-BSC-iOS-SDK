@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HanpassBscSDK'
   s.version          = '0.1.1'
-  s.summary          = 'A short description of HanpassBscSDK.'
+  s.summary          = 'Hanpass BSC iOS SDK'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,13 +18,13 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  'Hanpass BSC iOS SDK: create, import, export wallet and check ethereum and token balance, send ethereum and token'
                        DESC
 
   s.homepage         = 'https://github.com/khjoncp/Hanpass-BSC-iOS-SDK.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Ergashev Odiljon' => 'oaergashev@gmail.com' }
+  s.author           = { 'centerprime' => 'support@centerprime.technology' }
   s.source           = { :git => 'https://github.com/khjoncp/Hanpass-BSC-iOS-SDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
