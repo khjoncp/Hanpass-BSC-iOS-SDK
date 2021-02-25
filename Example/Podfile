@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'HanpassBscSDK_Example' do
+  pod 'HanpassBscSDK', :path => '../'
+
+  target 'HanpassBscSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
