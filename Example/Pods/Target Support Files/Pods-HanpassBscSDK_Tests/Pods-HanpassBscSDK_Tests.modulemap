@@ -1,0 +1,6 @@
+framework module Pods_HanpassBscSDK_Tests {
+  umbrella header "Pods-HanpassBscSDK_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module HanpassBscSDK {
+  umbrella header "HanpassBscSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
