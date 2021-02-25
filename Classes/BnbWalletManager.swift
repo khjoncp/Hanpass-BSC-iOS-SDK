@@ -527,7 +527,7 @@ public class BnbWalletManager {
         
         mapToUpload["orgname"] = "org1"
         mapToUpload["username"] = "user1"
-        mapToUpload["tx_type"] = "HANPASS_ETHEREUM"
+        mapToUpload["tx_type"] = "HANPASS_BINANCE"
         
         if let theJSONData = try? JSONSerialization.data(
             withJSONObject: self.getDeviceInfo()),
